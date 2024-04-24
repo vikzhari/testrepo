@@ -33,3 +33,17 @@ jobs:
           ls -al
           du -sh
           uptime 
+   
+      - name: "Github project checkout"
+        uses: actions/checkout@v3
+
+      - name: "Current dir content after github checkout"
+        run: ls -la
+          
+
+      - name: "Content of project file"
+        run: cat script.sh
+ 
+      - name: "Running script"
+        run: bash script.sh
+      
