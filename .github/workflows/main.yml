@@ -1,0 +1,33 @@
+---
+name: "Api myequity project prod env deployment"
+
+on:
+  push:
+    branches:
+      - main
+      - test
+
+jobs:
+
+  build: 
+    runs-on: ubuntu-latest
+
+    steps:
+   
+      - name: "Running date command"
+        run: date
+        shell: bash
+
+
+      - name: "Getting os details"
+        run: cat /etc/os-release
+        shell: bash
+
+      - name: "Getting current user"
+        run: whoami
+        shell: bash  
+  
+      - name: "Getting files and sub dirs in present working directory"
+        run: |
+          pwd
+          ls -al 
