@@ -30,4 +30,6 @@ jobs:
       - name: "Getting files and sub dirs in present working directory"
         run: |
           pwd
-          ls -al 
+          ls -al
+          du -sh
+          uptime 
