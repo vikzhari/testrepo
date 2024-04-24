@@ -35,7 +35,7 @@ jobs:
           uptime 
    
       - name: "Github project checkout"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: "Current dir content after github checkout"
         run: ls -la
